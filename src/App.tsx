@@ -1,8 +1,8 @@
 import React, {Suspense} from "react";
 import './App.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import AdminRoutes  from "./AdminRoutes";
 const PublicRoutes = React.lazy(() => import('./PublicRoutes'))
+const AdminRoutes = React.lazy(() => import('./AdminRoutes'))
 function App() {
 
   return (
